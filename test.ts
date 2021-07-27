@@ -1,9 +1,14 @@
-import { assertEq, arrayAssert, test } from "./mod.ts";
+import { assertEq, assertNeq, arrayAssert, test } from "./mod.ts";
 
 Deno.test("assert()", () => {
   assertEq(1, 1);
   assertEq(2, 2);
   assertEq("number", "number");
+});
+
+Deno.test("assertNeq", () => {
+  assertNeq(1,"Abc");
+  assertNeq(2, 0);
 });
 
 Deno.test("arrayAssert()", () => {

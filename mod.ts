@@ -21,7 +21,7 @@ export function arrayAssert<T>(left: T[], right: T[], message?: string): void {
   }
 }
 
-export function assertNeq<T>(left: T, right: T, message?: string): void {
+export function assertNeq(left: unknown, right: unknown, message?: string): void {
   if (left === right) throw new AssertionError(message);
 }
 

@@ -35,13 +35,13 @@ test(add(1, 2)).instanceOf(Number);  // Works
 ```ts
 function assertEq<T>(left: T, right: T, message?: string): void
 ```
-Throws an `AssertionError` if the result is truthy
+Throws an `AssertionError` if `left` is not the same as `right`
 
 * `assertNeq(left, right [, message])`
 ```ts
-function assertNeq<T>(left: T, right: T, message?: string): void
+function assertNeq(left: unknown, right: unknown, message?: string): void
 ```
-Throws an `AssertionError` if the result is falsy
+Throws an `AssertionError` if `left` is the same as `right`
 
 * `arrayAssertEq(left, right [, message])`
 ```ts
