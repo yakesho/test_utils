@@ -1,5 +1,5 @@
 # `test_utils`
-A simple library do your testing
+🦕 Testing library for Deno
 
 ## Installation
 ```sh
